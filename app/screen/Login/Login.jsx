@@ -5,8 +5,6 @@ import google from '../../../assets/google.png';
 import twiter from '../../../assets/twiter.png';
 import logo from '../../../assets/logo.png'
 import { styles } from './Styles';
-import * as SplashScreen from 'expo-splash-screen';
-import * as Font from 'expo-font';
 
 
 const Login = ({navigation}) => {
@@ -42,7 +40,14 @@ const Login = ({navigation}) => {
       navigation.navigate('Login')
     }
 
+   
+
   }
+
+  function HandleLoginMedia(){
+    alert('Login realizado com sucesso')
+    navigation.navigate('Login')
+}
 
   return (
     <View style={styles.container}>
@@ -70,13 +75,13 @@ const Login = ({navigation}) => {
           <TouchableOpacity onPress={handleLogin} style={styles.buttonLogin}>SING IN</TouchableOpacity>
           <Text style={styles.textH3}>or sign in with</Text>
           <View style={styles.containerSocialMedia}>
-              <TouchableOpacity onPress={handleLogin} style={styles.buttonSocialMedia}>
+              <TouchableOpacity onPress={HandleLoginMedia} style={styles.buttonSocialMedia}>
                 <Image source={google}></Image>
               </TouchableOpacity>
-              <TouchableOpacity onPress={handleLogin} style={styles.buttonSocialMedia}>
+              <TouchableOpacity onPress={HandleLoginMedia} style={styles.buttonSocialMedia}>
                 <Image source={facebook}></Image>
               </TouchableOpacity>
-              <TouchableOpacity onPress={handleLogin} style={styles.buttonSocialMedia}>
+              <TouchableOpacity onPress={HandleLoginMedia} style={styles.buttonSocialMedia}>
                 <Image source={twiter}></Image>
               </TouchableOpacity>
           </View>

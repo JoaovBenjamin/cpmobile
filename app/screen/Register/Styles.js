@@ -5,13 +5,29 @@ export const styles = StyleSheet.create({
         display: "flex",
         flexDirection: "column",
         backgroundColor: 'white',
+        textAlign: 'center',
+        justifyContent: 'center',
         alignItems: 'center',
         height: '100vh',
     },
 
     containerImage: {
-        width: '150px',
-        height: '135px',
+     display: "flex", 
+     flexDirection: "row-reverse", 
+     justifyContent: "space-around",
+     gap: 250,
+     alignItems: 'center',
+     textAlign: 'center',
+     alignSelf:'center',
+     marginBottom: 28,
+     marginLeft: 35 
+    },
+
+    image:{
+        width: 25,
+        height: 25,
+        resizeMode: "contain"
+
     },
 
     textoH1: {
@@ -37,15 +53,18 @@ export const styles = StyleSheet.create({
 
     //TODO -- Fazer o Checkbox e ajeitar o layout
 
-    // containerCheckbox: {
-    //     display: "flex",
-    //     flexDirection: 'row'
+    containerCheckbox: {
+        display: "flex",
+        flexDirection: 'row',
+        gap:3,
+        textAlign: 'center',
+        alignItems: "center"
 
-    // },
+    },
 
-    // textUseTerms: {
-    //     color: 'green'
-    // },
+    textUseTerms: {
+        color: 'green'
+    },
 
     buttonRegister: {
         display: 'flex',
